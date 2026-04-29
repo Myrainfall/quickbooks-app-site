@@ -1,16 +1,66 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Terms of Use for the QuickBooks Assistant application.">
   <title>Terms of Use</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --accent: #2563eb;
+      --border: #dbe4f0;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    main {
+      max-width: 760px;
+      margin: 48px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    }
+
+    h1 { margin-top: 0; line-height: 1.2; }
+    p { color: var(--muted); }
+    a { color: var(--accent); }
+
+    .nav {
+      margin-top: 24px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+  </style>
 </head>
 <body>
-  <h1>Terms of Use</h1>
-  <p>This application is provided on an as-is basis for authorized QuickBooks Online users.</p>
-  <p>By using this application, you authorize it to access the QuickBooks data that you explicitly approve through Intuit OAuth.</p>
-  <p>You are responsible for reviewing any outputs before relying on them. The application provider is not liable for business, financial, or tax decisions made using the application.</p>
-  <p>Access may be revoked at any time by the user or the application provider.</p>
-  <p>For questions, contact: YOUR_EMAIL</p>
+  <main>
+    <section class="card" aria-labelledby="page-title">
+      <h1 id="page-title">Terms of Use</h1>
+      <p>This application is provided on an as-is basis for authorized QuickBooks Online users.</p>
+      <p>By using this application, you authorize it to access the QuickBooks data that you explicitly approve through Intuit OAuth.</p>
+      <p>You are responsible for reviewing any outputs before relying on them. The application provider is not liable for business, financial, or tax decisions made using the application.</p>
+      <p>Access may be revoked at any time by the user or the application provider.</p>
+      <p>For questions, contact: YOUR_EMAIL</p>
+      <p class="nav"><a href="index.html">Back to QuickBooks Assistant home</a></p>
+    </section>
+  </main>
 </body>
 </html>

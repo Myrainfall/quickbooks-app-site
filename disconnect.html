@@ -1,12 +1,83 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Instructions for disconnecting QuickBooks Online from QuickBooks Assistant.">
   <title>Disconnect QuickBooks</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --accent: #2563eb;
+      --border: #dbe4f0;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    main {
+      max-width: 760px;
+      margin: 48px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    }
+
+    h1, h2 { margin-top: 0; line-height: 1.2; }
+    p { color: var(--muted); }
+    a { color: var(--accent); }
+
+    .steps {
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    .steps li + li {
+      margin-top: 10px;
+    }
+
+    .steps strong {
+      color: var(--text);
+    }
+
+    .nav {
+      margin-top: 24px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+  </style>
 </head>
 <body>
-  <h1>Disconnect QuickBooks</h1>
-  <p>If you want to disconnect this application from QuickBooks Online, use the QuickBooks or Intuit connected-app settings, or follow the disconnect instructions provided by the app operator.</p>
+  <main>
+    <section class="card" aria-labelledby="page-title">
+      <h1 id="page-title">Disconnect QuickBooks</h1>
+      <p>If you want to remove this application's access to QuickBooks Online, use QuickBooks or Intuit connected-app settings, or follow the disconnect steps provided by the app operator. After you disconnect, the app stops syncing new QuickBooks data right away, and any features that depend on a live QuickBooks connection will stop working until you reconnect.</p>
+
+      <h2 id="disconnect-steps-title">Typical disconnect steps</h2>
+      <ol class="steps" aria-labelledby="disconnect-steps-title">
+        <li><strong>Open connected apps:</strong> Sign in to QuickBooks or Intuit and find the connected-app or app permissions settings.</li>
+        <li><strong>Find this app:</strong> Look for the QuickBooks Assistant connection in your authorized apps list.</li>
+        <li><strong>Remove access:</strong> Revoke or disconnect access. Once you do, this app can no longer pull current QuickBooks information, refresh balances or transactions, or complete actions that require your QuickBooks authorization.</li>
+      </ol>
+
+      <p class="nav"><a href="index.html">Back to QuickBooks Assistant home</a></p>
+    </section>
+  </main>
 </body>
 </html>

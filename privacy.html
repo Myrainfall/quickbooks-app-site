@@ -1,17 +1,68 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for the QuickBooks Assistant application.">
   <title>Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --accent: #2563eb;
+      --border: #dbe4f0;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    main {
+      max-width: 760px;
+      margin: 48px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    }
+
+    h1 { margin-top: 0; line-height: 1.2; }
+    p { color: var(--muted); }
+    a { color: var(--accent); }
+
+    .nav {
+      margin-top: 24px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+  </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p>This application connects to QuickBooks Online to help the account owner review and analyze their accounting data.</p>
-  <p>We only access data that the user explicitly authorizes through Intuit OAuth.</p>
-  <p>We do not sell personal or financial data. We do not share QuickBooks data with third parties except as required to operate the application or comply with law.</p>
-  <p>Authorized tokens and related connection data may be stored securely for the purpose of maintaining the connection and providing requested functionality.</p>
-  <p>Users may revoke access at any time through Intuit or QuickBooks connected-app settings.</p>
-  <p>If you have questions about this policy, contact: YOUR_EMAIL</p>
+  <main>
+    <section class="card" aria-labelledby="page-title">
+      <h1 id="page-title">Privacy Policy</h1>
+      <p>This application connects to QuickBooks Online to help the account owner review and analyze their accounting data.</p>
+      <p>In plain language: we only access the QuickBooks company information you approve, such as account, transaction, customer, vendor, or report data needed to provide the app's features.</p>
+      <p>We only access data that the user explicitly authorizes through Intuit OAuth.</p>
+      <p>We do not sell personal or financial data. We do not share QuickBooks data with third parties except as required to operate the application or comply with law.</p>
+      <p>Authorized tokens and related connection data may be stored securely for the purpose of maintaining the connection and providing requested functionality.</p>
+      <p>Users may revoke access at any time through Intuit or QuickBooks connected-app settings.</p>
+      <p>If you need help, or want more information about your data or deletion requests, contact: YOUR_EMAIL</p>
+      <p class="nav"><a href="index.html">Back to QuickBooks Assistant home</a></p>
+    </section>
+  </main>
 </body>
 </html>

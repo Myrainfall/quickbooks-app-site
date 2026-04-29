@@ -1,20 +1,135 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="QuickBooks Assistant helps authorized users review and analyze QuickBooks Online data.">
   <title>QuickBooks Assistant</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --accent: #2563eb;
+      --border: #dbe4f0;
+      --hero-bg: linear-gradient(135deg, #dbeafe 0%, #eff6ff 100%);
+      --hero-text: #1e3a8a;
+      --pill-bg: #eff6ff;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    main {
+      max-width: 760px;
+      margin: 48px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    }
+
+    .hero {
+      margin-bottom: 24px;
+      padding: 20px 24px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--hero-bg);
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--hero-text);
+    }
+
+    h1, h2 { margin-top: 0; line-height: 1.2; }
+    p { color: var(--muted); }
+
+    .pill-list,
+    .link-list {
+      padding-left: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .pill-list li {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--pill-bg);
+      color: var(--hero-text);
+      font-weight: 600;
+    }
+
+    .section-title {
+      margin: 32px 0 12px;
+      font-size: 1.05rem;
+    }
+
+    .link-list li + li { margin-top: 10px; }
+    a { color: var(--accent); }
+  </style>
 </head>
 <body>
-  <h1>QuickBooks Assistant</h1>
-  <p>This app helps authorized users review and analyze QuickBooks Online data.</p>
-  <p>Features may include read-only discovery, transaction review support, categorization assistance, and workflow guidance.</p>
-  <p>To connect or reconnect your QuickBooks account, follow the instructions provided by the app operator.</p>
-  <ul>
-    <li><a href="privacy.html">Privacy Policy</a></li>
-    <li><a href="terms.html">Terms of Use</a></li>
-    <li><a href="connect.html">Connect QuickBooks</a></li>
-    <li><a href="disconnect.html">Disconnect QuickBooks</a></li>
-  </ul>
+  <main>
+    <section class="card" aria-labelledby="page-title">
+      <header class="hero">
+        <p class="eyebrow">Authorized QuickBooks Online access</p>
+        <h1 id="page-title">QuickBooks Assistant</h1>
+        <p>Review what this app does, how QuickBooks connection works, and where to go next.</p>
+        <ul class="pill-list" aria-label="Core product capabilities">
+          <li>Read-only discovery</li>
+          <li>Transaction review support</li>
+          <li>Categorization assistance</li>
+          <li>Workflow guidance</li>
+        </ul>
+      </header>
+
+      <p>To connect or reconnect your QuickBooks account, use the Connect QuickBooks page and then return to the app or operator instructions to finish authorization.</p>
+
+      <h2 class="section-title" id="get-started-title">Get started</h2>
+      <ul class="link-list" aria-labelledby="get-started-title">
+        <li><a href="connect.html">Open the Connect QuickBooks instructions</a></li>
+        <li><a href="disconnect.html">Disconnect QuickBooks access</a></li>
+      </ul>
+
+      <h2 class="section-title" id="what-to-expect-title">What to expect</h2>
+      <ul class="link-list" aria-labelledby="what-to-expect-title">
+        <li>You will be asked to sign in to Intuit and approve access for this app.</li>
+        <li>The app is intended for authorized users who need help reviewing QuickBooks Online data.</li>
+        <li>You can disconnect access at any time using the disconnect page above.</li>
+      </ul>
+
+      <h2 class="section-title" id="policies-support-title">Policies and support</h2>
+      <ul class="link-list" aria-labelledby="policies-support-title">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+        <li>For account or support questions, contact the app operator directly.</li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
